@@ -17,7 +17,7 @@ router.route("/logout").post(logoutUser);
 
 // Profile route (GET) - Protected by verifyJWT middleware
 router.route("/profile").get(verifyJWT, profile);
-router.post("/refresh-token", refreshAccessToken);
+router.post("refresh-token", refreshAccessToken);
 
 // Export the router
 export default router;
