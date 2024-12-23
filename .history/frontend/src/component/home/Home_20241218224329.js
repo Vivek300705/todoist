@@ -1,0 +1,18 @@
+import React from 'react'
+
+function Home() {
+  return (
+    <div class="text-center my-64 w-100"> 
+    <h1 class="font-bold text-4xl justify-center flex">Plan. Achieve. Simplify.</h1>
+    <br/>
+    <div class="  text-4xl  justify-center ">
+     <b> &quot; Organize your day, achieve your goals, and stay productive—your <br/>  ultimate To-Do list starts here for a better tomorrow! &quot;</b>
+  <p class="text-lg p-5 font-medium">
+     &quot; अपना दिन व्यवस्थित करें, अपने लक्ष्यों को पूरा करें, और उत्पादक बने रहें—बेहतर कल के लिए यहां से शुरुआत करें! &quot;
+    </p>
+    </div>
+  </div>
+  )
+}
+
+export default Home
