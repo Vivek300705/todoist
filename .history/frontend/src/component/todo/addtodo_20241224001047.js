@@ -16,7 +16,7 @@ const AddTodo = () => {
         throw new Error("No token found. Please log in.");
       }
 
-      const response = await fetch(`${import.meta.env.versel_backend_url}api/todos`, {
+      const response = await fetch(`${import.meta.env.versel_backend_url}/todos`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -86,7 +86,7 @@ const AddTodo = () => {
         throw new Error("No token found. Please log in.");
       }
 
-      const response = await fetch(`${import.meta.env.versel_backend_url}api/todo/${id}`, {
+      const response = await fetch(`${import.meta.env.versel_backend_url}/todo/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

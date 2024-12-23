@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 });
 
 // API Routes
-app.use('/api', router); // User-related routes
+app.use('/api/users', router); // User-related routes
 app.use('/api', todorouter); // Todo-related routes
 
 // MongoDB connection
