@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 
 // User API routes
 app.use('/', router);
-app.use("/",todorouter)
+app.use("/api",todorouter)
 // MongoDB connection
 mongoose
   .connect(process.env.Mongodb_url)
