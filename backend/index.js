@@ -10,12 +10,14 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(
-  cors({
-    origin: "https://todoist-potb.vercel.app", // Replace with your frontend URL
-    credentials: true, // Include credentials if using cookies or authentication headers
-  })
-);
+// app.use(
+//   cors({
+//     // origin: "https://todoist-potb.vercel.app", // Replace with your frontend URL
+//     credentials: true, // Include credentials if using cookies or authentication headers
+//   })
+// );
+
+app.use(cors());
 app.use(express.json());
 
 // Basic route
