@@ -25,7 +25,7 @@ function Signup() {
 
     try {
       const response = await axios.post(
-        `${import.meta.env.versel_backend_url}/signup`,
+        "${import.meta.env.versel_backend_url}/signup",
         {
           username: formData.fullname,
           email: formData.email,

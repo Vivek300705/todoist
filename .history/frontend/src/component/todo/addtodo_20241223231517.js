@@ -16,7 +16,7 @@ const AddTodo = () => {
         throw new Error("No token found. Please log in.");
       }
 
-      const response = await fetch(`${import.meta.env.versel_backend_url}/todos`, {
+      const response = await fetch("http://localhost:8000/api/todos", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,

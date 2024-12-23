@@ -19,7 +19,7 @@ function Profile() {
       }
 
       try {
-        const response = await axios.get(`${import.meta.env.versel_backend_url}/profile`, {
+        const response = await axios.get("https://todoist-ruddy.vercel.app//profile", {
           headers: {
             "Authorization": `Bearer ${token}`,
           },
