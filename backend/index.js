@@ -12,7 +12,7 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: "https://todoist-potb.vercel.app/", // Replace with your frontend URL
+    origin: "https://todoist-potb.vercel.app", // Replace with your frontend URL
     credentials: true, // Include credentials if using cookies or authentication headers
   })
 );
