@@ -13,16 +13,10 @@ const app = express();
 // Middleware
 app.use(
   cors({
-<<<<<<< HEAD
     origin: "https://todoist-potb.vercel.app", // Frontend URL
-=======
-    origin: "https://todoist-potb.vercel.app", // Replace with your frontend URL
->>>>>>> c93bbac2582f8ee0ffca608a6cc3459a255f9585
     credentials: true, // Include credentials if using cookies or authentication headers
   })
 );
-
-app.use(cors());
 app.use(express.json());
 
 // Basic route
@@ -43,10 +37,5 @@ mongoose
   .then(() => console.log('MongoDB connection successful'))
   .catch((err) => console.error('MongoDB connection error:', err));
 
-// Server port
-const PORT = process.env.PORT || 7000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
-
-export default app; // For Vercel compatibility
+// Export the app for serverless deployment
+export default app;
