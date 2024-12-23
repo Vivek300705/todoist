@@ -13,10 +13,16 @@ const app = express();
 // Middleware
 app.use(
   cors({
+<<<<<<< HEAD
     origin: "https://todoist-potb.vercel.app", // Frontend URL
+=======
+    origin: "https://todoist-potb.vercel.app", // Replace with your frontend URL
+>>>>>>> c93bbac2582f8ee0ffca608a6cc3459a255f9585
     credentials: true, // Include credentials if using cookies or authentication headers
   })
 );
+
+app.use(cors());
 app.use(express.json());
 
 // Basic route
